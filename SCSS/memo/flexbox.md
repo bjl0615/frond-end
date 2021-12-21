@@ -26,3 +26,41 @@ flexbox의 두개의 축
     flex 요소를 정렬하고 끝을 맞추(justify)라면 어느 축이 어느 방향인지 이해하는 것이 중요합니다.
     flexbox는 주축, 교차축을 따라 항목을 정렬하고 끝을 밎추는 각정 속성들을 적용하는 방식으로 동작합니다.
 ```
+
+<br>
+
+flex-direction
+```
+    flex-direction CSS 속성은 플렉스 컨테이너 내의 아이템 배치할 때 사용할 주축 및 방향(정방향, 역방향)을 지정합니다.
+
+    row와 row-reverse의 경우 플렉스 컨테이너의 방향성에 영향을 받암 
+    컨테이너의 dir 값이 ltr이라면 row는 왼쪽부터 시작하는 가로축을, row-reverse는 오른쪽부터 시작하는 가로축을 나타냅니다. 그러나 dir 값이 rtl이라면 row가 오른쪽부터 시작하는 가로축을, 
+    row-reverse가 왼족부터 시작하는 왼쪽부터 시작하는 가로축을 나타냅니다.
+
+구문
+    /* 한 줄의 글을 작성하는 방향대로 */
+    flex-direction: row;
+
+    /* <row>처럼, 대신 역방향 */
+    flex-direction: row-reverse;
+
+    /* 글 여러 줄이 쌓이는 방향대로 */
+    flex-direction: column;
+
+    /* <column>처럼, 대신 역방향 */
+    flex-direction: column-reverse;
+
+    /* 전역 값 */
+    flex-direction: inherit;
+    flex-direction: initial;
+    flex-direction: unset;
+
+값 
+    row : 플레스 컨테이너의 주축이 글의 작성 방향과 동일합니다. 주축의 시작점과 끝점이 콘텐츠 방향과 동일합니다.
+
+    row-reverse : row와 동일하게 동작하지만 시작점과 끝점이 반대에 위치합니다.
+
+    colum: 플렉스 컨테이너의 주축이 블록 축과 동일합니다. 주축의 시작점과 끝점이, 글 작성 모드의 이전 지점 및 이후 지점과 동일합니다.
+
+    colum-reverse : colum과 동일하게 동작하지만 시작점과 끝점이 반대에 위치합니다.
+```
