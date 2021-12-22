@@ -10,10 +10,10 @@
 - [x] align-items
 - [x] align-self
 - [x] flex-wrap
-- [] align-content
-- [] flex-grow
-- [] flex-shrink
-- [] flex-basis
+- [x] align-content
+- [x] flex-grow
+- [x] flex-shrink
+- [x] flex-basis
 
 ## Grid:
 
